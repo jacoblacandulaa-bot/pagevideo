@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Vlog — [Your Name]</title>
+  <style>
+    /* Yellow & black stripes (black stripes slightly bigger) */
+    body{
+      margin:0;
+      font-family:system-ui, Arial, sans-serif;
+      background: repeating-linear-gradient(135deg, #000 0 40px, #FFD800 40px 70px);
+      color:#fff;
+      display:flex;
+      justify-content:center;
+      padding:40px 16px;
+    }
+    .container{ width:100%; max-width:1000px; }
+    header{ background:rgba(0,0,0,0.55); padding:18px; border-radius:10px; }
+    h1{ margin:0; color:#FFD800; text-shadow:2px 2px #000; }
+    .desc{ margin-top:12px; background:rgba(0,0,0,0.45); padding:12px; border-radius:8px; line-height:1.45; }
+    .media{ margin-top:18px; display:flex; justify-content:center; }
+    video, iframe{ width:100%; max-width:900px; border-radius:12px; border:6px solid #000; box-shadow:0 8px 30px rgba(0,0,0,.6); }
+    @media (max-width:600px){ video, iframe{ max-width:100%; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Vlog</h1>
+      <p class="desc">Hello! I’m [Your Name]. Replace this with your short description about your vlog or yourself.</p>
+    </header>
+
+    <div class="media">
+      <!-- Option A: local video file (place video.mp4 in the repo root) -->
+      <video controls playsinline>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Option B: YouTube embed (uncomment and replace VIDEO_ID if you prefer YouTube)
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      -->
+    </div>
+  </div>
+</body>
+</html>
